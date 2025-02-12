@@ -1,0 +1,58 @@
+/* About Section - Improve Layout */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Profile Image - Make Smaller & Centered */
+.about-image img {
+    max-width: 150px; /* Adjust image size */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #ffcc00; /* Adds a stylish border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-top: 1rem;
+}
+
+/* Improve About Text */
+.about-content {
+    flex: 1;
+    margin: 1rem;
+    max-width: 500px;
+}
+
+/* Center and Style Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+/* Improve Project Cards */
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Improve Dark Mode for Cards */
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
